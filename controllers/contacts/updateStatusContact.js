@@ -2,8 +2,8 @@ const { basedir } = global;
 const { Contact, schemas } = require(`${basedir}/models/contact`);
 const { createError } = require(`${basedir}/helpers`);
 
-const updateStatus = async (req, res) => {
-  
+const updateStatusContact = async (req, res) => {
+  // Preventing lack of necessary data
   const { error } = schemas.updateFavorite.validate(req.body);
   if (error) {
     throw createError(400, "missing field favorite");
@@ -19,4 +19,4 @@ const updateStatus = async (req, res) => {
   res.json(result);
 }
 
-module.exports = updateStatus;
+module.exports = updateStatusContact;
