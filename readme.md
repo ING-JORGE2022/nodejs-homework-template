@@ -9,8 +9,8 @@
 
 - hw02 ( HECHO ✅)
 - hw03 (HECHO ✅)
-- hw04
-- hw05
+- hw04  (HECHO ✅)
+- hw05 (HECHO ✅)
 - hw06
 
 Кожна нова гілка для др повинна робитися з master
