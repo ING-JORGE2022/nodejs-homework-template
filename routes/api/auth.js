@@ -1,4 +1,3 @@
-
 const express = require('express');
 
 const { basedir } = global;
@@ -18,7 +17,7 @@ router.post('/register', ctrlWrapper(ctrl.register));
 router.post('/login', ctrlWrapper(ctrl.login));
 
 // current
-router.get('', auth, ctrlWrapper(ctrl.getCurrent));
+router.get('/current', auth, ctrlWrapper(ctrl.getCurrent));
 
 // log out
 router.get('/logout', auth, ctrlWrapper(ctrl.logout));
